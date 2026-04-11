@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | AquaVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #000B18;
+            --accent-cyan: #00DBFF;
+            --text-main: #E0E0E0;
+            --text-dim: #A0A0A0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Abstract background glow */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(0, 219, 255, 0.08) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -10%;
+            right: -10%;
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, rgba(0, 219, 255, 0.05) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: 12px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-shadow: 0 0 30px rgba(0, 219, 255, 0.4);
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            margin-top: 16px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+
+        .content-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-cyan);
+            padding-left: 16px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .service-name {
+            display: block;
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; letter-spacing: 6px; }
+            .content-card { padding: 32px 24px; }
+            .service-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>AquaVerse</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <p class="last-updated">Last Updated: April 11, 2026</p>
+        </header>
+
+        <main class="content-card">
+            <section>
+                <h2>Introduction</h2>
+                <p>Welcome to AquaVerse. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and disclose information when you use our mobile application.</p>
+            </section>
+
+            <section>
+                <h2>Information We Collect</h2>
+                <p>We collect information to provide you with a cinematic and personalized experience. This includes:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Data used for synchronization across your devices via Firebase.</li>
+                    <li><strong>Biological Database:</strong> Images captured or uploaded via your camera for pathogen identification.</li>
+                    <li><strong>Technical Data:</strong> Device identifiers and usage patterns for performance optimization.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Third-Party Services</h2>
+                <p>To provide advanced features, AquaVerse utilizes several trusted third-party providers:</p>
+                <div class="service-list">
+                    <div class="service-item">
+                        <span class="service-name">Google Firebase</span>
+                        Backend infrastructure, authentication, and database synchronization.
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Google Gemini AI</span>
+                        Processing of biological data and descriptive analysis via generative AI.
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">RevenueCat</span>
+                        Secure management of in-app purchases and subscriptions.
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Google AdMob</span>
+                        Personalized advertisement delivery based on device identifiers.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Device Permissions</h2>
+                <p>AquaVerse requires the following permissions to function as intended:</p>
+                <ul>
+                    <li><strong>Camera:</strong> To capture images of biological specimen for the database.</li>
+                    <li><strong>Storage:</strong> To save or upload images from your device gallery.</li>
+                    <li><strong>Internet:</strong> To synchronize data with the abyssal cloud and access AI capabilities.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Data Security</h2>
+                <p>We implement the highest industry standards for data encryption and security. Your biological database and personal records are synchronized using end-to-end secure connections provided by our infrastructure partners.</p>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+                <p>If you have any questions or concerns about our Privacy Policy or data practices, please contact us at:</p>
+                <p style="color: var(--accent-cyan); font-weight: 700;">support@aquaverse-app.com</p>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 AquaVerse. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
